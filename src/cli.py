@@ -40,7 +40,7 @@ def create_bp(name, full):
             else:
                 lines = [
                     "from flask import Blueprint \n\n",
-                    f"{name}_bp = Blueprint('{name}',__name__') \n\n",
+                    f"{name}_bp = Blueprint('{name}',__name__) \n\n",
                     "from . import views",
                 ]
                 f.writelines(lines)
